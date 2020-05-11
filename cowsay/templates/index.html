@@ -1,0 +1,9 @@
+<h1>Cowsay</h1>
+
+<a href="">Home</a> | <a href="history/">Recent Cowsays</a>
+<pre>{{newCowsay.cowsay}}</pre>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+<input type="submit" value="Click to create new cowsay">
+</form>
